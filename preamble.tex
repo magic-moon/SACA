@@ -1,8 +1,9 @@
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{chemfig}
+\usepackage{amssymb}    		%为了更好的符号，如
+\usepackage[version=4]{mhchem}	 %简单化学式
+\usepackage{chemfig}	   	%复杂化学式
 \usepackage{graphicx}
 \usepackage{makeidx}         %调用makedidx宏包
 \usepackage{listings}        %用于插入代码块
@@ -41,4 +42,6 @@
 		}												%章节格式设置
 \usepackage[a4paper,left=3cm,right=3cm]{geometry}
 \newcommand\chapternamebox[1]{% 
-	\parbox{\ccwd}{\linespread{1}\selectfont\centering #1}} 				
+	\parbox{\ccwd}{\linespread{1}\selectfont\centering #1}} 	
+
+\newcommand\superequiv{\mathrel{\rlap{\raisebox{\fontdimen22\textfont2}{$=$}}\raisebox{-0.5\fontdimen22\textfont2}{$ = $}}} %4横线	
