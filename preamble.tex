@@ -9,7 +9,7 @@
 \usepackage{makeidx}        %调用makedidx宏包
 \usepackage{listings}       %用于插入代码块
 \usepackage{xcolor}         %为代码块设置颜色
-
+\usepackage{stix}
 \lstset{
 	columns=fixed,     	                                % 在左侧显示行号
 	frame=single,                                       % 不显示背景边框
@@ -32,6 +32,7 @@
 	urlcolor=black,
 	bookmarksnumbered=true,
 	bookmarksopenlevel=4]{hyperref}						%生成标签，就是大纲也是目录	
+	
 \ctexset{chapter ={
 		beforeskip = 0pt, 
 		fixskip = true, 
@@ -40,9 +41,10 @@
 		number = \arabic{chapter}, 
 		aftername = \par\medskip, 
 		aftertitle = \par\bigskip\nointerlineskip\rule{\linewidth}{2bp}\par}
-		}												%章节格式设置
+}												%章节格式设置
 \usepackage[a4paper,left=3cm,right=3cm]{geometry}
-\newcommand\chapternamebox[1]{% 
+
+\newcommand\chapternamebox[1]{
 	\parbox{\ccwd}{\linespread{1}\selectfont\centering #1}} 	
 
 \newcommand\superequiv{\mathrel{\rlap{\raisebox{\fontdimen22\textfont2}{$=$}}\raisebox{-0.5\fontdimen22\textfont2}{$ = $}}} %4横线	
