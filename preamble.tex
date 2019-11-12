@@ -5,11 +5,12 @@
 \usepackage[version=4]{mhchem}	 %简单化学式
 \usepackage{chemfig}	   	%复杂化学式
 \usepackage{graphicx}
-\usepackage{pifont}			%用于
+\usepackage{pifont}			%用于输入带圈符号
 \usepackage{makeidx}        %调用makedidx宏包
 \usepackage{listings}       %用于插入代码块
 \usepackage{xcolor}         %为代码块设置颜色
-\usepackage{stix}
+\usepackage{upgreek}		%直立字母表
+%\usepackage{stix}
 \lstset{
 	columns=fixed,     	                                % 在左侧显示行号
 	frame=single,                                       % 不显示背景边框
@@ -36,7 +37,7 @@
 \ctexset{chapter ={
 		beforeskip = 0pt, 
 		fixskip = true, 
-		format = \Huge\bfseries, 
+		format = \Huge\bfseries\raggedright,
 		nameformat = \rule{\linewidth}{2bp}\par\bigskip\hfill\chapternamebox, 
 		number = \arabic{chapter}, 
 		aftername = \par\medskip, 
